@@ -92,18 +92,121 @@
 
 //check leaf year
 
-function isLeapYear(year) {
-    const remainder = year % 4;
-    if (remainder == 0) {
-        console.log('this is leap year', year);
-        return true;
+// function isLeapYear(year) {
+//     const remainder = year % 4;
+//     if (remainder == 0) {
+//         console.log('this is leap year', year);
+//         return true;
+//     }
+//     else {
+//         console.log('this is not leap year', year)
+//         return false;
+//     }
+// }
+// const birthdayYear = isLeapYear(2020);
+// console.log(birthdayYear);
+// const isbirthdayYear = isLeapYear(2027);
+// console.log(isbirthdayYear);
+
+//finding odd numbers
+
+// function getSumOfAnArray(numbers) {
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         console.log(index, element);
+//     }
+// }
+// const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123];
+// getSumOfAnArray(mynumbers);
+//that code is used only for showing index & elements parallaly
+
+
+
+// function getSumOfAnArray(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         sum = sum + element;
+//         console.log(index, element, sum);
+//     }
+// }
+// const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123];
+// getSumOfAnArray(mynumbers);
+
+
+
+//that code is used only for showing index  elements & sum of elements  parallaly and also use let sum outside of the for loop because the let sum calculate new one output of the outside of the totall elements..and also add sum = sum + element to add elements... without using let sum out of for loop its being 0 always and always added 0+ too..we can also use return sum outside of the for loop but we can't use return inside the for loop.. its also work as like let sum...as like
+
+
+// function getSumOfAnArray(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         sum = sum + element;
+//         console.log(index, element, sum);
+//     }
+//     return sum;
+// }
+// const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123];
+// getSumOfAnArray(mynumbers);
+
+
+
+// get odd number from array... this is the main code of this seassion...
+
+// function getSumOfAnArray(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         sum = sum + element;
+//         // console.log(index, element, sum);
+//     }
+//     return sum;
+// }
+// function getOddNumbersOfAnArray(numbers) {
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         if (element % 2 !== 0) {
+//             console.log(index, element);
+//         }
+
+//     }
+
+// }
+// const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123, 124];
+// getOddNumbersOfAnArray(mynumbers);
+// getSumOfAnArray(mynumbers);
+
+//if (element % 2 === 0) then it show all even number if (element % 2 !== 0) show all odd number..
+
+//getting odd/even number sum below
+
+function getSumOfAnArray(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        const index = i;
+        const element = numbers[index];
+        sum = sum + element;
+        // console.log(index, element, sum);
     }
-    else {
-        console.log('this is not leap year', year)
-        return false;
-    }
+    return sum;
 }
-const birthdayYear = isLeapYear(2020);
-console.log(birthdayYear);
-const isbirthdayYear = isLeapYear(2027);
-console.log(isbirthdayYear);
+function getOddNumbersOfAnArray(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+        const index = i;
+        const element = numbers[index];
+        if (element % 2 !== 0) {
+            console.log(index, element);
+        }
+
+    }
+
+}
+const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123, 124];
+getOddNumbersOfAnArray(mynumbers);
+getSumOfAnArray(mynumbers);
