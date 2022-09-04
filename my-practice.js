@@ -237,16 +237,46 @@
 // }
 
 
-//multiplication
+//multiplication have to start 1 ... let result = 1.....
 
 //1*2*3*4*5*6*7
 
-function multiplicationOfNumbers(number) {
+// function multiplicationOfNumbers(number) {
+//     let result = 1;
+//     for (let i = 1; i <= 7; i++) {
+//         result = result * i;
+//     }
+//     return result;
+// }
+// const result = multiplicationOfNumbers(7);
+// console.log(result);
+
+
+
+// factorial is same concept of multiplication...
+
+
+// function factorial(number) {
+//     let result = 1;
+//     for (let i = 1; i <= 4; i++) {
+//         result = result * i;
+//     }
+//     return result;
+// }
+// const result = factorial(4);
+// console.log(result);
+
+
+
+//factorial reverse
+
+function factorial(number) {
     let result = 1;
-    for (let i = 1; i <= 7; i++) {
+    for (let i = number; i >= 1; i--) {
         result = result * i;
     }
     return result;
 }
-const result = multiplicationOfNumbers(7);
-console.log(result);
+const number = 5;
+const fact = factorial(number);
+console.log('reverse factorial of 5', number, fact);

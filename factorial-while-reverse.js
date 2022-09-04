@@ -1,7 +1,7 @@
-function factorial(number){
+function factorial(number) {
     let i = number;
     let result = 1;
-    while( i >= 1){
+    while (i >= 1) {
         result = result * i;
         i--;
     }
@@ -9,3 +9,4 @@ function factorial(number){
 }
 
 const output = factorial(7);
+console.log(output);
