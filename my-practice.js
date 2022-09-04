@@ -184,29 +184,33 @@
 
 //if (element % 2 === 0) then it show all even number if (element % 2 !== 0) show all odd number..
 
-//getting odd/even number sum below
+//getting odd/even number sum below...this one is for odd..getting even..have to use if (element % 2 === 0)
 
-function getSumOfAnArray(numbers) {
-    let sum = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        const index = i;
-        const element = numbers[index];
-        sum = sum + element;
-        // console.log(index, element, sum);
-    }
-    return sum;
-}
-function getOddNumbersOfAnArray(numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        const index = i;
-        const element = numbers[index];
-        if (element % 2 !== 0) {
-            console.log(index, element);
-        }
+// function getSumOfAnArray(numbers) {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         sum = sum + element;
+//         // console.log(index, element, sum);
+//     }
+//     return sum;
+// }
+// function getOddNumbersOfAnArray(numbers) {
+//     const oddNumbers = [];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+//         const element = numbers[index];
+//         if (element % 2 !== 0) {
+//             console.log(index, element);
+//             oddNumbers.push(element);
+//         }
 
-    }
-
-}
-const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123, 124];
-getOddNumbersOfAnArray(mynumbers);
-getSumOfAnArray(mynumbers);
+//     }
+//     return oddNumbers;
+// }
+// const mynumbers = [12, 13, 15, 16, 19, 11, 111, 123, 124];
+// const oddNumbers = getOddNumbersOfAnArray(mynumbers);
+// console.log(oddNumbers);
+// const oddNumberSum = getSumOfAnArray(oddNumbers);
+// console.log('odd number sum', oddNumberSum);
