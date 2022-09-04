@@ -214,3 +214,39 @@
 // console.log(oddNumbers);
 // const oddNumberSum = getSumOfAnArray(oddNumbers);
 // console.log('odd number sum', oddNumberSum);
+
+
+// sumOfNumber....findout the sum of 1 to 7....
+
+// let sum = 0;
+// for (let i = 1; i <= 7; i++) {
+//     sum = sum + i;
+//     console.log(i, sum);
+// }
+
+
+// doing it into function.... i can chose my number and put it in the field of number..thats it
+
+// function sumOfNumber(number) {
+//     let sum = 0;
+//     for (let i = 1; i < number; i++) {
+//         sum = sum + i;
+//         console.log(i, sum);
+//     }
+//     return sum;
+// }
+
+
+//multiplication
+
+//1*2*3*4*5*6*7
+
+function multiplicationOfNumbers(number) {
+    let result = 1;
+    for (let i = 1; i <= 7; i++) {
+        result = result * i;
+    }
+    return result;
+}
+const result = multiplicationOfNumbers(7);
+console.log(result);
